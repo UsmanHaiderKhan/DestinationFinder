@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA7303"
+    tools:context=".splash">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingTop="130dp"
+        android:paddingRight="30dp"
+        android:scaleType="fitCenter">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"></ImageView>
+
+        <TextView
+            android:id="@+id/dest_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:shadowColor="#000"
+            android:shadowDx="3"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:text="DESTINATION"
+            android:textAlignment="center"
+            android:textColor="#1c1c1c"
+            android:textSize="40dp"></TextView>
+
+        <TextView
+            android:id="@+id/find_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing=".3"
+            android:shadowColor="#000"
+            android:shadowDx="3"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:text="FINDER"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="50dp"></TextView>
+
+        <TextView
+            android:id="@+id/exp_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Explore WITH US MOST
+CONVINENT APP !!"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#fff"
+            android:text="Login"></Button>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#fff"
+            android:text="Register"></Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
+

@@ -8,4 +8,9 @@
     <color name="startColor">#D7FF43</color>
     <color name="centerColor">#F67831</color>
     <color name="endColor">#FF1493</color>
+
+    <color name="colorSignOne">#ff7400</color>
+    <color name="colorSignTwo">#ff9415</color>
+
+    <color name="borderColor">#e2e2e2</color>
 </resources>
