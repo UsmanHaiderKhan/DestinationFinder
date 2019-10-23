@@ -13,4 +13,6 @@
     <color name="colorSignTwo">#ff9415</color>
 
     <color name="borderColor">#e2e2e2</color>
+
+    <color name="textColor">#1c1c1c</color>
 </resources>

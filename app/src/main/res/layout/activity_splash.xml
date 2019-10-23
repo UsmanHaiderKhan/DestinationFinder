@@ -20,7 +20,7 @@
             android:layout_width="140dp"
             android:layout_height="130dp"
             android:layout_gravity="center"
-            android:src="@drawable/logo"></ImageView>
+            android:src="@drawable/logo" />
 
         <TextView
             android:id="@+id/dest_text"
@@ -34,7 +34,7 @@
             android:text="DESTINATION"
             android:textAlignment="center"
             android:textColor="#1c1c1c"
-            android:textSize="40dp"></TextView>
+            android:textSize="40dp" />
 
         <TextView
             android:id="@+id/find_text"
@@ -48,7 +48,7 @@
             android:text="FINDER"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textSize="50dp"></TextView>
+            android:textSize="50dp" />
 
         <TextView
             android:id="@+id/exp_text"
@@ -58,17 +58,16 @@
 CONVINENT APP !!"
             android:textAlignment="center"
             android:textColor="#fff"
-            android:textSize="20dp">
-
-        </TextView>
+            android:textSize="20dp" />
 
         <Button
             android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:text="Login"
             android:background="#fff"
-            android:text="Login"></Button>
+            android:textColor="@android:color/black" />
 
         <Button
             android:id="@+id/register_btn"
@@ -76,7 +75,8 @@ CONVINENT APP !!"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="#fff"
-            android:text="Register"></Button>
+            android:text="Register"
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
 
