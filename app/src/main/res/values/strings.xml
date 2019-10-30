@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">DestinationFinder</string>
     <string name="register">Register</string>
+    <string name="update">Save Changes</string>
 
 </resources>

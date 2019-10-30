@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1"
+
     tools:context=".signup">
 
     <LinearLayout
@@ -68,6 +69,7 @@
             android:paddingLeft="13dp"
             android:shadowColor="#ebebeb"
             android:textColorHint="#1c1c1c "
+            android:inputType="text"
             android:textSize="18dp" />
         <EditText
             android:id="@+id/email"
@@ -82,6 +84,7 @@
             android:paddingLeft="13dp"
             android:shadowColor="#ebebeb"
             android:textColorHint="#1c1c1c "
+            android:inputType="text"
             android:textSize="18dp" />
         <EditText
             android:id="@+id/password"
@@ -96,6 +99,7 @@
             android:paddingLeft="13dp"
             android:shadowColor="#ebebeb"
             android:textColorHint="#1c1c1c "
+            android:inputType="numberPassword"
             android:textSize="18dp" />
         <EditText
             android:id="@+id/con_password"
@@ -110,6 +114,7 @@
             android:paddingLeft="13dp"
             android:shadowColor="#ebebeb"
             android:textColorHint="#1c1c1c "
+            android:inputType="numberPassword"
             android:textSize="18dp" />
 
         <EditText
@@ -125,6 +130,7 @@
             android:paddingLeft="13dp"
             android:shadowColor="#ebebeb"
             android:textColorHint="#1c1c1c "
+            android:inputType="phone"
             android:textSize="18dp" />
         <EditText
             android:id="@+id/country"
@@ -139,18 +145,22 @@
             android:paddingLeft="13dp"
             android:shadowColor="#ebebeb"
             android:textColorHint="#1c1c1c "
+            android:inputType="text"
             android:textSize="18dp" />
 
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_below="@+id/country"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/gradient_btn_sign"
+            android:elevation="20dp"
+            android:paddingLeft="40dp"
+            android:text="@string/register"
+            android:textColor="#fff" />
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="match_parent"
-        android:layout_height="57dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/gradient_btn_sign"
-        android:elevation="20dp"
-        android:text="@string/register"
-        android:textColor="#fff" />
+
 </LinearLayout>

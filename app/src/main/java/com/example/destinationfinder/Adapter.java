@@ -5,48 +5,55 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class Adapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+import java.util.List;
 
-    Context context;
-    String[] items;
+public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
-    public Adapter(Context context, String[] items) {
+    private Context context;
+    private List<resturant> resturants;
+
+    public Adapter(Context context, List<resturant> resturants) {
         this.context = context;
-        this.items = items;
+        this.resturants = resturants;
     }
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View row = inflater.inflate(R.layout.activity_signup, parent, false);
-        Item item = new Item(row);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        return item;
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.resturants, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        ((Item) holder).editText.setText(items[position]);
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        holder.title.setText(resturants.get(position).getTitle());
+        holder.imageView.setImageResource(resturants.get(position).getThumbnail());
     }
 
     @Override
     public int getItemCount() {
-        return items.length;
+        return resturants.size();
     }
 
-    public class Item extends RecyclerView.ViewHolder {
-        EditText editText;
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        TextView title;
+        ImageView imageView;
 
-        public Item(@NonNull View itemView) {
+
+        public ViewHolder(@NonNull View itemView) {
 
             super(itemView);
-            editText = (EditText) itemView.findViewById(R.id.email);
+            title = (TextView) itemView.findViewById(R.id.heading_text);
+            imageView = (ImageView) itemView.findViewById(R.id.book_img);
+
         }
     }
 }
