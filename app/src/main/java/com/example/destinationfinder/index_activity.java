@@ -1,5 +1,6 @@
 package com.example.destinationfinder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -22,10 +23,13 @@ public class index_activity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.nav_home:
-                                // TODO
+
+                                Intent intent = new Intent(getBaseContext(), profile.class);
+                                startActivity(intent);
                                 return true;
                             case R.id.fav_color:
-                                // TODO
+                                Intent intents = new Intent(getBaseContext(), Resturant_View.class);
+                                startActivity(intents);
                                 return true;
                             case R.id.search:
                                 // TODO

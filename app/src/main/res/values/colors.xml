@@ -11,6 +11,8 @@
 
     <color name="colorSignOne">#ff7400</color>
     <color name="colorSignTwo">#ff9415</color>
+    <color name="bottom_nav">#e2e2e2</color>
+    <color name="icon_color">#b6b6b6</color>
 
     <color name="borderColor">#e2e2e2</color>
 
