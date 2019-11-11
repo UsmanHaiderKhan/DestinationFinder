@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context=".Resturant_View">
 
-
+    <include layout="@layout/resturants_toolbar" />
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
